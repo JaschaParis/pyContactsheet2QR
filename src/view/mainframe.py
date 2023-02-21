@@ -72,7 +72,7 @@ class MainFrame(wx.Frame):
                              "org": ["Gesellschaft", "Organisation", "Firma"],
                              "zip": ["PLZ", "Postleitzahl", "zip"],
                              "city": ["Stadt", "Ort", "City"],
-                             "address": ["Adresse", "Straße"],
+                             "address": ["Straße"],
                              "jobtitle": ["Job", "Position", "Funktion"],
                              "photouri": ["Photo", "Foto"],
                              "phone": ["Festnetz", "Durchwahl", "Telefon"],

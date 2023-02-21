@@ -1,6 +1,5 @@
 
 import pandas as pd
-import numpy as np
 import segno.helpers as sh
 import segno
 import datetime
@@ -50,10 +49,10 @@ class Controller:
             return None
 
     def export_qr_codes(self, directory):
-        if np.any(self.contactData[self.dataMapping["name"]].isna()):
+        if pd.isna(self.contactData[self.dataMapping["name"]]).any():
             self.status_text = "Fehler. Nicht alle Namen gefüllt."
             return -1
-        if np.any(self.contactData[self.dataMapping["firstname"]].isna()):
+        if pd.isna(self.contactData[self.dataMapping["firstname"]]).any():
             self.status_text = "Fehler. Nicht alle Vornamen gefüllt."
             return -1
 
